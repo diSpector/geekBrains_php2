@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>{{name}}</h1>
+<!--<a href="index.php?cart=true" class = "cart_link">Корзина</a>-->
+<div class="gallery">
+    {% for product in products %}
+        {% include 'productInGallery.html' %}
+    {% endfor %}
+    <!--<a href='/?module=catalog&productID=<?= $product['id'] ?>'>-->
+</div>
+<!--<a href="\" class = "lonely_link">На Главную</a>-->
+<!--<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>-->
+<!--<script src = "js/script.js"></script>-->
+</body>
+</html>
+
