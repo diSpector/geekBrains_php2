@@ -1,0 +1,1 @@
+<div class="order_placed">Заказ {{content_data}} размещен!</div>
